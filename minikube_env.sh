@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export MINIKUBE_HOME=/Users/burrsutter/minikube/;
+export PATH=$MINIKUBE_HOME/bin:$PATH
+
 # minishift profile set 9steps
 minikube --profile 9steps config set memory 6144
 minikube --profile 9steps config set cpus 2 (1)
